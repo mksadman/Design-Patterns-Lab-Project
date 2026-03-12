@@ -9,19 +9,8 @@ import ducks.RedheadDuck;
 import ducks.RubberDuck;
 import interfaces.Quackable;
 
-/**
- * CountingDuckFactory – creates ducks wrapped in a QuackCounter decorator
- * so every quack is automatically tallied.
- *
- * Design Pattern: Abstract Factory (ConcreteFactory)
- * Design Pattern: Decorator       (applied transparently during construction)
- */
 public class CountingDuckFactory extends AbstractDuckFactory {
 
-    /**
-     * Static factory method – the only way to obtain a CountingDuckFactory.
-     * Keeps main() free of the {@code new} keyword.
-     */
     public static AbstractDuckFactory getInstance() {
         return new CountingDuckFactory();
     }

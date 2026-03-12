@@ -4,11 +4,6 @@ import interfaces.Observer;
 import interfaces.Quackable;
 import observer.Observable;
 
-/**
- * MallardDuck – concrete Quackable.
- *
- * Design Pattern: Observer (ConcreteSubject)
- */
 public class MallardDuck implements Quackable {
 
     private final Observable observable;

@@ -4,11 +4,6 @@ import interfaces.Observer;
 import interfaces.Quackable;
 import observer.Observable;
 
-/**
- * RedheadDuck – concrete Quackable.
- *
- * Design Pattern: Observer (ConcreteSubject)
- */
 public class RedheadDuck implements Quackable {
 
     private final Observable observable;

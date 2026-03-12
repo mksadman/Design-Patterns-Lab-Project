@@ -7,16 +7,10 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/**
- * Observable – reusable delegate composed by each concrete duck to manage
- * its observer list, avoiding code duplication across duck classes.
- *
- * Design Pattern: Observer (Subject / Observable helper)
- */
 public class Observable implements QuackObservable {
 
     private final List<Observer> observers = new ArrayList<>();
-    private final QuackObservable duck;   // back-reference so observers receive the real duck
+    private final QuackObservable duck;
 
     public Observable(QuackObservable duck) {
         this.duck = duck;

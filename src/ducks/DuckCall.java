@@ -4,11 +4,6 @@ import interfaces.Observer;
 import interfaces.Quackable;
 import observer.Observable;
 
-/**
- * DuckCall – a duck hunting call device; concrete Quackable.
- *
- * Design Pattern: Observer (ConcreteSubject)
- */
 public class DuckCall implements Quackable {
 
     private final Observable observable;

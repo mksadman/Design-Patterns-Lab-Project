@@ -4,11 +4,6 @@ import interfaces.Observer;
 import interfaces.Quackable;
 import observer.Observable;
 
-/**
- * RubberDuck – concrete Quackable. Squeaks rather than quacks.
- *
- * Design Pattern: Observer (ConcreteSubject)
- */
 public class RubberDuck implements Quackable {
 
     private final Observable observable;

@@ -13,7 +13,7 @@ public class DuckSimulator {
 
     static void simulate(AbstractDuckFactory factory) {
 
-        System.out.println("\n--- Duck Simulator (AbstractFactory, Adapter, Decorator, Composite, Iterator, Observer) ---\n");
+        System.out.println("\n--- Duck Simulator ---\n");
 
         Quackable mallardDuck = factory.createMallardDuck();
         Quackable redheadDuck = factory.createRedheadDuck();
@@ -21,7 +21,7 @@ public class DuckSimulator {
         Quackable duckCall = factory.createDuckCall();
         Quackable gooseDuck = factory.createGooseDuck();
 
-        // create a sub-flock of 4 mallards
+        //Sub-flock of 4 mallards
         Flock flockOfMallards = factory.createFlock();
         flockOfMallards.add(factory.createMallardDuck());
         flockOfMallards.add(factory.createMallardDuck());
